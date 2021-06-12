@@ -1,0 +1,16 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./HTML/login_page.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "etash_tyagi",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "jQuery": "^1.7.4"
+  }
+}

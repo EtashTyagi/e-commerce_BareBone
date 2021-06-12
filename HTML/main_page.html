@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Etash | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="./../CSS/main_style.css">
+    <script src="./../JS/main_page.js"></script>
+</head>
+<header class="titlebar">
+    <span class="middle">ETASH</span>
+    <div class="middle">
+        <label class="search" style="float: right;">
+            <input class="search-bar middle" type="search" placeholder="Item">
+            <button class="search-button middle">Search</button>
+        </label>
+    </div>
+</header>
+
+<body onload="buildImageNavIndex(); fetchPromoLinks();" class="gradient_animation" style="height: 100vh">
+<div style="width: 100%;height: min(9vw, 9vh);"></div>
+<div class="navbar">
+    <div id="grocery_element" class="navbar-elements">
+        Grocery
+    </div>
+    <div id="fashion_element" class="navbar-elements">
+        Fashion
+    </div>
+    <div id="electronics_element" class="navbar-elements">
+        Electronics
+    </div>
+    <div id="mobile_element" class="navbar-elements">
+        Mobile
+    </div>
+</div>
+<div style="width: 100%;height: min(13.1vw, 13.1vh);"></div>
+<div style="height: calc(99.75vh - min(9vw, 9vh) - min(13.1vw, 13.1vh)); width: 100%">
+    <img class="image-displayer-navbutton" src="./../res/left_arrow.png" alt="Left Arrow" onclick="mainImageLeft()">
+    <img class="image-displayer-navbutton" style="transform: rotate(180deg); float: right" src="./../res/left_arrow.png" alt="Right Arrow" onclick="mainImageRight()">
+    <img id ="promotional_image"
+         style="z-index: 1;position: relative; object-fit: scale-down;object-position: 50% 50%; top: -12vh; transition-duration: 0.20s"
+         src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" height="99%" width="99.8%" alt="Main_image">
+    <div class="image-displayer-navindex" id="image-displayer-navindex">
+    </div>
+</div>
+</body>
+<footer>
+
+</footer>
+</html>

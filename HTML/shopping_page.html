@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Etash | Buy Items</title>
+    <link rel="stylesheet" type="text/css" href="./../CSS/main_style.css">
+    <script src="./../JS/shopping_page.js"></script>
+</head>
+<header class="titlebar">
+    <span class="middle">ETASH</span>
+    <div class="middle">
+        <label class="search" style="float: right;">
+            <input id="search_category" class="search-bar middle" type="search" placeholder="Item">
+            <button class="search-button middle">Search</button>
+        </label>
+    </div>
+</header>
+<body class="gradient_animation" style="height: 100%" onload="putItems()">
+<div style="width: 100%;height: min(9vw, 9vh);"></div>
+<div class="navbar">
+    <div id="grocery_element" class="navbar-elements">
+        Grocery
+    </div>
+    <div id="fashion_element" class="navbar-elements">
+        Fashion
+    </div>
+    <div id="electronics_element" class="navbar-elements">
+        Electronics
+    </div>
+    <div id="mobile_element" class="navbar-elements">
+        Mobile
+    </div>
+</div>
+<div style="width: 100%;height: min(13.1vw, 13.1vh);"></div>
+
+<div class="elevated_container" style="width: 85vw; top: calc(min(1vw, 1vh)); transform: translate(-50%, 0);">
+    <span id="category_label" style="color: #121212; font-size: min(5vw, 5vh); display: block; text-align: center; border-bottom: solid #121212">ELECTRONICS</span>
+    <div style="display: block">
+        <div id="products" style="display: inline-block; border: solid 1px; padding-bottom: 10px; width: 100%">
+        <template>
+            <p></p>
+            <span id="category" style="display: block; font-size: min(min(5vh, 5vw), 200%)">Category</span>
+        </template>
+            <template>
+                <figure class="product-container">
+                    <img id="img_src" src="./../res/download.jpg" width="100%" style="border-bottom: solid 2px">
+                    <figcaption style="font-size: min(min(3vh, 3vw), 100%)">
+                        <span id="prod_name">{{prod_name}}</span><br>
+                        <span><b>Price: <span id="prod_price">{{prod_price}}</span></b></span>
+                    </figcaption>
+                </figure>
+            </template>
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+</body>
+</html>

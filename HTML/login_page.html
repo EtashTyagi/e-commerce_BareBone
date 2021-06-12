@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <title>ETASH | Login To Continue</title>
+    <link rel="stylesheet" type="text/css" href="./../CSS/main_style.css">
+    <script src="./../JS/login_page.js"></script>
+</head>
+<header class="titlebar">
+    <span class="middle">ETASH</span>
+</header>
+<body class="gradient_animation" style="height: 100vh">
+<div style="width: 100vw;height: min(9vw, 9vh);"></div>
+
+<div class="elevated_container">
+    <span style="font-size: min(8vw, 8vh);
+             border-bottom: solid #121212 2px;
+             color: #121212; display: block;
+             text-align: center">
+        LOGIN
+    </span>
+    <form style="margin: 3vh 0">
+        <label class="login_container-container">
+            <input class="login_container-elements" type="text" placeholder="Username">
+        </label>
+        <label class="login_container-container">
+            <input class="login_container-elements" type="password" placeholder="Password">
+        </label>
+        <label class="login_container-container">
+            <a href="404"><span style="font-size: min(2.5vw, 2.5vh)">Forgot Password</span></a>
+        </label>
+        <label class="login_container-container">
+            <input style="height: min(1.75vw, 1.75vh)" type="checkbox" name="signed_in" value="signed_in">
+            <span style="font-size: min(2.5vw, 2.5vh)">Remember Me</span>
+        </label>
+        <label class="login_container-container">
+            <button type="button" class="login_container-elements login_container-login_button" onclick="login()">Log In</button>
+        </label>
+        <label class="login_container-container">
+            <button type="button" class="login_container-elements login_container-signup_button" onclick="signup()">Sign Up</button>
+        </label>
+    </form>
+</div>
+</body>
+</html>
